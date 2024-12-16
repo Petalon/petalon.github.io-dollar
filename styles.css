@@ -64,3 +64,39 @@ body {
 .dollar-button:hover::after {
     transform: scaleX(1); /* Expand the line on hover */
 }
+
+/* Contact Address Section */
+.contact-address {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.contact-address h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact-address p {
+    font-size: 1.2rem;
+}
+
+/* Roadmap Section */
+.roadmap {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.roadmap h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.roadmap ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.roadmap li {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
