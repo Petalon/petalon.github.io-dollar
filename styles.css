@@ -1,17 +1,18 @@
 body {
-    background: url('images/manydollars.jpg') center center / cover no-repeat, black;
+    background: url('images/texture.jpg') center center / cover no-repeat, black;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    color: white;
-    font-family: 'Courier New', monospace;
+    font-family: 'Arial', sans-serif;
     position: relative;
     overflow: hidden;
+    color: white;
 }
 
+/* Overlay for Dimming Background */
 body::after {
     content: '';
     position: absolute;
@@ -19,14 +20,22 @@ body::after {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6); /* Adjust transparency */
+    background-color: rgba(0, 0, 0, 0.5); /* Dims the background texture */
     pointer-events: none;
     z-index: 0;
 }
 
-h1, .button-container {
-    position: relative;
+/* Improved $ Sign */
+h1 {
+    font-size: 15rem; /* Bigger $ sign */
+    background: linear-gradient(135deg, #1db954, #a8d5a0);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    margin: 0;
     z-index: 1;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
 }
 
 .button-container {
