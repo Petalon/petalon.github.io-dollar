@@ -18,18 +18,6 @@ body {
     width: 400px; /* Larger width */
     height: auto;
     margin: 20px auto; /* Center image horizontally */
-    animation: shine 4s infinite linear; /* Shimmer animation */
-}
-
-/* Shining Effect Animation */
-@keyframes shine {
-    0%, 100% {
-        filter: brightness(1);
-    }
-    50% {
-        filter: brightness(1.2); /* Increase brightness for a shining effect */
-        background: linear-gradient(to bottom, rgba(255, 215, 0, 0.3), rgba(255, 215, 0, 0)); /* Reflection line */
-    }
 }
 
 /* Media Queries for Mobile View */
