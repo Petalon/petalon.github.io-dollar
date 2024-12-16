@@ -39,45 +39,27 @@ body {
 
 /* Gold Bar Button Styles */
 .dollar-button {
-    background: linear-gradient(135deg, #f9d423 30%, #ff4e50 100%);
-    border: 2px solid #b8860b;
-    border-radius: 5px;
-    color: #6b3e00;
     font-size: 1.5rem;
     font-weight: bold;
-    padding: 0.8rem 2rem;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1.5rem;
+    border: none;
     cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-    font-family: 'Courier New', monospace;
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.5), inset 0px -3px 4px rgba(255, 255, 255, 0.3);
+    transition: color 0.3s ease;
     position: relative;
-    overflow: hidden;
+    white-space: nowrap;
 }
 
-/* Hover and Active States */
 .dollar-button:hover {
-    transform: translateY(-5px);
-    background: linear-gradient(135deg, #ffdd44 30%, #ffc107 100%);
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.7), inset 0px -3px 4px rgba(255, 255, 255, 0.4);
-}
-
-.dollar-button:active {
-    transform: translateY(2px);
-    background: linear-gradient(135deg, #f9c823 30%, #ff8c00 100%);
-}
-
-/* Decorative "$" Symbol */
-.dollar-button::before {
-    content: "$";
-    font-size: 4rem;
-    font-weight: bold;
-    color: rgba(255, 255, 255, 0.2);
-    position: absolute;
-    top: -10%;
-    left: -10%;
-    transform: rotate(45deg);
+    color: #FFD700; /* Gold color for hover effect */
 }
 
 .dollar-button:hover::before {
-    color: rgba(255, 255, 255, 0.4);
+    content: "$$$"; /* $$$ symbols on hover */
+    position: absolute;
+    top: -20%;
+    left: -20%;
+    font-size: 2rem;
+    font-weight: bold;
 }
