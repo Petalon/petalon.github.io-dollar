@@ -4,15 +4,12 @@ body {
   justify-content: flex-start;
   align-items: center;
   height: 100vh;
-  min-block-size: 100vh;
   margin: 0;
   background-color: #000000; /* Dark background */
   color: white;
   font-family: 'Arial', sans-serif;
   position: relative;
   line-height: 1.5;
-  display: grid;
-  place-items: center;
 }
 
 p {
