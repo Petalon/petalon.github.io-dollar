@@ -17,5 +17,20 @@
     <div id="animation-container"></div>
 
     <script src="script.js"></script>
+
+    <!-- LOADER -->
+        <div id="loader"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.1/lottie.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var animation = lottie.loadAnimation({
+            container: document.getElementById('loader'), // the div that will contain the animation
+            path: 'images/dolllaranimation.json', // the path to your Lottie JSON file
+            renderer: 'svg',
+            loop: true,
+            autoplay: true
+        });
+    });
+</script>
 </body>
 </html>
