@@ -65,37 +65,22 @@ body {
 }
 
 /* Contact Address Section */
-.contact-address {
+.contact-address, .roadmap {
     margin-top: 50px;
     text-align: center;
+    opacity: 0;
+    transform: translateY(20px); /* Initially hidden off-screen */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth reveal animation */
 }
 
-.contact-address h2 {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
+.contact-address.hidden, .roadmap.hidden {
+    opacity: 1;
+    transform: translateY(0);
 }
 
-.contact-address p {
-    font-size: 1.2rem;
-}
-
-/* Roadmap Section */
-.roadmap {
-    margin-top: 20px;
-    text-align: center;
-}
-
-.roadmap h2 {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-}
-
-.roadmap ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.roadmap li {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
+/* Scrolling behavior */
+body.scroll .contact-address,
+body.scroll .roadmap {
+    opacity: 1;
+    transform: translateY(0);
 }
