@@ -45,4 +45,48 @@ h1 {
 }
 
 .dollar-button:active {
-    transform: translateY(2px)
+    transform: translateY(2px) rotate(0);
+    background: linear-gradient(135deg, #1db954 30%, #a8d5a0 100%);
+}
+
+.dollar-button::before {
+    content: "$";
+    font-size: 3rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    top: -20%;
+    left: -20%;
+    transform: rotate(45deg);
+}
+
+.dollar-button:hover::before {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+#animation-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.dollar {
+    position: absolute;
+    color: #1db954;
+    font-size: 2rem;
+    animation: float 1.5s ease-out forwards;
+}
+
+@keyframes float {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-150px);
+    }
+}
