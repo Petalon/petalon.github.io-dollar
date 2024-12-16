@@ -6,33 +6,43 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    background-color: #000000; /* Dark background */
     color: white;
     font-family: 'Arial', sans-serif;
     position: relative;
     overflow: hidden;
-    background-color: #000000; /* Set a default background color */
-    visibility: visible; /* Ensure content is visible */
 }
 
+/* Center the gold title image */
 .gold-title {
     width: 400px; /* Larger width */
     height: auto;
-    margin: 0 auto; /* Center the image horizontally */
-    position: relative;
+    margin: 20px auto; /* Center image horizontally */
+    animation: shine 4s infinite linear; /* Shimmer animation */
 }
 
-/* Button Container */
-.button-container {
-    margin-top: 2rem;
-    display: flex;
-    gap: 1rem;
+/* Shining Effect Animation */
+@keyframes shine {
+    0%, 100% {
+        filter: brightness(1);
+    }
+    50% {
+        filter: brightness(1.2); /* Increase brightness for a shining effect */
+        background: linear-gradient(to bottom, rgba(255, 215, 0, 0.3), rgba(255, 215, 0, 0)); /* Reflection line */
+    }
 }
 
-/* Gold Bar Button Styles */
-.button-container {
-    margin-top: 2rem;
-    display: flex;
-    gap: 1rem;
+/* Media Queries for Mobile View */
+@media (max-width: 768px) {
+    .gold-title {
+        width: 300px; /* Adjust image size for smaller screens */
+        margin: 10px auto; /* Center image horizontally on mobile */
+    }
+
+    .button-container {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
 }
 
 /* Minimalist Button Styles */
