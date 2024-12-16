@@ -12,7 +12,6 @@ body {
   line-height: 1.5;
 }
 
-/* Center the gold title image */
 .gold-title {
   width: 500px; /* Larger width for better visibility */
   height: auto;
@@ -20,6 +19,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 auto; /* Added to center the image horizontally */
 }
 
 .navbar {
