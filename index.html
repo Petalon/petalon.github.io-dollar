@@ -16,11 +16,26 @@
         <a href="https://t.me/coinxsolana" target="_blank">TELEGRAM</a>
     </div>
         
-      <!-- Contact Address Section -->
-        <div class="contact-address hidden">
-            <h2>Contact Address (CA)</h2>
-            <p>123 Crypto Street, Solana City, XY 12345</p>
-        </div>
+   <div class="coin-container">
+    <p id="contact-address" class="contact-address" onclick="copyContactAddress()">CA: 9NjhtzNvDVWY62HRJUGRLKrpHcNRFt1F1kZG6rztCKKN</p>
+</div>
+
+<script>
+    // Function to copy the contact address to clipboard
+    function copyContactAddress() {
+        const contactAddressElement = document.getElementById('contact-address');
+        const originalContactAddress = "CA: 9NjhtzNvDVWY62HRJUGRLKrpHcNRFt1F1kZG6rztCKKN"; // Keep original address
+
+        navigator.clipboard.writeText(originalContactAddress.slice(4)) // Copy address without "CA: "
+            .then(() => {
+                // Change text to "Copied!"
+                contactAddressElement.textContent = "Copied!";
+            })
+            .catch(err => {
+                alert('Error copying text: ' + err);
+            });
+    }
+</script>
         
         <!-- Roadmap Section -->
         <div class="roadmap hidden">
