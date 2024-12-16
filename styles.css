@@ -14,27 +14,19 @@ body {
     visibility: visible; /* Ensure content is visible */
 }
 
-h1 {
-    font-family: 'Arial Black', sans-serif;
-    font-size: 12rem; /* Extra large font size */
-    font-weight: bold;
-    color: transparent;
-    background: linear-gradient(45deg, #ffd700, #ffcc33, #ffb400);
-    background-size: 200%;
-    background-clip: text;
-    -webkit-background-clip: text;
+.gold-title {
+    width: 400px; /* Larger width */
+    height: auto;
     animation: shine 4s infinite linear; /* Shimmer animation */
-    text-align: center;
-    margin: 0;
 }
 
 /* Shining Effect Animation */
 @keyframes shine {
     0% {
-        background-position: 0% 50%;
+        filter: brightness(1);
     }
     100% {
-        background-position: 100% 50%;
+        filter: brightness(1.2); /* Increase brightness for a shining effect */
     }
 }
 
