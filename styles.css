@@ -7,12 +7,13 @@ body {
     height: 100vh;
     margin: 0;
     color: white;
-    font-family: Arial, sans-serif;
+    font-family: 'Courier New', monospace;
 }
 
 h1 {
-    font-size: 10rem;
+    font-size: 8rem;
     margin: 0;
+    color: #1db954;
 }
 
 .button-container {
@@ -21,68 +22,27 @@ h1 {
     gap: 1rem;
 }
 
-.cool-button {
-    background: linear-gradient(45deg, #1db954, #1d4fb9);
-    color: white;
-    border: none;
-    border-radius: 30px;
-    padding: 0.8rem 2rem;
-    font-size: 1.2rem;
+.dollar-button {
+    background: linear-gradient(135deg, #1db954 30%, #a8d5a0 100%);
+    border: 2px solid #0f8c3e;
+    border-radius: 12px;
+    color: #053f20;
+    font-size: 1.5rem;
     font-weight: bold;
+    padding: 0.8rem 2rem;
     cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    font-family: 'Courier New', monospace;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4), inset 0px -3px 4px rgba(255, 255, 255, 0.2);
     position: relative;
     overflow: hidden;
-    transition: transform 0.2s ease;
 }
 
-.cool-button:hover {
-    transform: scale(1.1);
+.dollar-button:hover {
+    transform: translateY(-5px) rotate(-1deg);
+    background: linear-gradient(135deg, #2ae369 30%, #bdecb4 100%);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.6), inset 0px -3px 4px rgba(255, 255, 255, 0.2);
 }
 
-.cool-button:active {
-    transform: scale(0.9);
-}
-
-.cool-button::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 300%;
-    height: 300%;
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.3), transparent 70%);
-    transform: translate(-50%, -50%) scale(0);
-    border-radius: 50%;
-    transition: transform 0.5s ease;
-}
-
-.cool-button:active::after {
-    transform: translate(-50%, -50%) scale(1);
-}
-
-#animation-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-}
-
-.dollar {
-    position: absolute;
-    color: #1db954;
-    font-size: 2rem;
-    animation: float 1.5s ease-out forwards;
-}
-
-@keyframes float {
-    0% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-    100% {
-        opacity: 0;
-        transform: translateY(-150px);
-    }
-}
+.dollar-button:active {
+    transform: translateY(2px)
