@@ -204,3 +204,23 @@ body {
 .button:active {
   transform: scale(1.01);
 }
+
+/* Disclaimer Styles */
+.disclaimer {
+  font-size: 0.8rem;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);  /* Slight black background for contrast */
+  padding: 8px 12px;
+  border-radius: 5px;
+  opacity: 0.8;
+  width: 100%;
+  text-align: center;
+  margin-top: 50px; /* Give it some space from the content above */
+}
+
+/* Make it slightly more readable on hover */
+.disclaimer:hover {
+  opacity: 1;
+}
