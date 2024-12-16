@@ -66,47 +66,34 @@ body {
 }
 
 /* Scroll Button Styles */
-.main__scroll {
-    display: flex;
-    align-items: center;
-    color: rgba(28, 28, 30, 1);
-    font-weight: bold;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    margin-top: 20px;
-    transition: color 0.3s ease;
+a {
+  text-decoration: none;
+}
+/* <main-style> ============================ */
+.main__scroll-text {
+  color: #ffffff;
 }
 
-.main__scroll-box {
-    width: 2rem;
-    height: 2rem;
-    margin-right: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation: scroll-down 3s infinite;
-}
-
-.main__scroll:hover {
-    color: #FFD700;
+.main__action:hover .main__scroll-box {
+  animation: scroll-down 3s infinite;
 }
 
 /* Animate scroll icon */
 @keyframes scroll-down {
-    0%, 100% {
-        transform: translateY(0rem);
-        opacity: 1;
-    }
+  0%, 100% {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
 
-    35% {
-        transform: translateY(1rem);
-        opacity: 0;
-    }
+  35% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
 
-    70% {
-        transform: translateY(-1rem);
-        opacity: 0;
-    }
+  70% {
+    transform: translateY(-1rem);
+    opacity: 0;
+  }
 }
 
 /* Sections for CA and Roadmap */
@@ -134,4 +121,3 @@ body {
 .sections ul li {
     margin: 5px 0;
 }
-
