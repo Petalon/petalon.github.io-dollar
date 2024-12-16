@@ -130,3 +130,56 @@ body.scroll .roadmap {
     }
 }
 
+
+/* ROADMAP Section */
+.roadmap-section {
+    margin: 50px auto;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #000000; /* Dark background */
+    color: #f0f0f0; /* Soft white text */
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.roadmap-list {
+    list-style: none;
+    padding: 0;
+}
+
+.roadmap-list li {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.roadmap-list input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ffffff;
+    border-radius: 4px;
+    margin-right: 15px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.roadmap-list input[type="checkbox"]:checked {
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+
+.roadmap-list span {
+    font-size: 1.2rem;
+}
+
+.achieved span {
+    color: #77dd77; /* Green for achieved goals */
+    text-decoration: line-through;
+}
+
+.pending span {
+    color: #ff6f61; /* Reddish for pending goals */
+}
