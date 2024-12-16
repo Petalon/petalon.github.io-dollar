@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background: url('images/manydollars.jpg') center center / cover no-repeat, black;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,12 +8,25 @@ body {
     margin: 0;
     color: white;
     font-family: 'Courier New', monospace;
+    position: relative;
+    overflow: hidden;
 }
 
-h1 {
-    font-size: 8rem;
-    margin: 0;
-    color: #1db954;
+body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Adjust transparency */
+    pointer-events: none;
+    z-index: 0;
+}
+
+h1, .button-container {
+    position: relative;
+    z-index: 1;
 }
 
 .button-container {
