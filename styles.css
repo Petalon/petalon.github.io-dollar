@@ -20,6 +20,40 @@ body {
     margin-top: 50px; /* Adjusted to place buttons below image */
 }
 
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Space the buttons evenly */
+    padding: 20px 10%;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    z-index: 10; /* Ensure navbar stays above other elements */
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative; /* Needed for the pseudo-element */
+}
+
+.navbar a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -2px; /* Position the line below the text */
+    height: 2px;
+    background-color: white;
+    transform: scaleX(0); /* Start hidden */
+    transform-origin: center;
+    transition: transform 0.3s ease; /* Smooth animation */
+}
+
+.navbar a:hover::after {
+    transform: scaleX(1); /* Expand the line on hover */
+}
+
 /* Media Queries for Mobile View */
 @media (max-width: 768px) {
     .gold-title {
