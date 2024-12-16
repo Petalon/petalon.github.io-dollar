@@ -56,18 +56,20 @@ body {
   transform: scaleX(1); /* Expand the line on hover */
 }
 
-/* Media Queries for Mobile View */
-@media (max-width: 768px) {
-  .gold-title {
-    width: 300px; /* Adjust image size for smaller screens */
-  }
 
-  .button-container {
-    flex-direction: column;
-    gap: 0.5rem;
-    align-items: center;
-  }
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+    .memes-section h2 {
+        font-size: 1.5rem; /* Smaller font on mobile */
+    }
+    
+    .memes-scroller img {
+        flex: 0 0 200px; /* Smaller images on mobile */
+        width: 200px;
+        height: 200px;
+    }
 }
+
 
 /* CA */
 .coin-container {
