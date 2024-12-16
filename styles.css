@@ -66,27 +66,6 @@ body {
     }
 }
 
-
-/* Contact Address Section */
-.contact-address, .roadmap {
-    margin-top: 50px;
-    text-align: center;
-    opacity: 0;
-    transform: translateY(20px); /* Initially hidden off-screen */
-}
-
-.contact-address.hidden, .roadmap.hidden {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* Scrolling behavior */
-body.scroll .contact-address,
-body.scroll .roadmap {
-    opacity: 1;
-    transform: translateY(0);
-}
-
 /* CA */
 .coin-container {
     text-align: center;
