@@ -17,6 +17,8 @@ body {
 .gold-title {
     width: 400px; /* Larger width */
     height: auto;
+    margin: 0 auto; /* Center the image horizontally */
+    position: relative;
     animation: shine 4s infinite linear; /* Shimmer animation */
 }
 
