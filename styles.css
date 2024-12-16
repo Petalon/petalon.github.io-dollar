@@ -24,14 +24,14 @@ body {
 
 /* Shining Effect Animation */
 @keyframes shine {
-    0% {
+    0%, 100% {
         filter: brightness(1);
     }
-    100% {
+    50% {
         filter: brightness(1.2); /* Increase brightness for a shining effect */
+        background: linear-gradient(to bottom, rgba(255, 215, 0, 0.3), rgba(255, 215, 0, 0)); /* Reflection line */
     }
 }
-
 /* Button Container */
 .button-container {
     margin-top: 2rem;
