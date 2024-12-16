@@ -13,10 +13,11 @@ body {
 }
 
 p {
-  font-size: 1.2rem;
+    font-size: 1.2rem;
     font-weight: bold; /* Make text bold */
     margin: 20px 0; /* Add spacing between paragraphs */
     line-height: 1.6;
+    align-items: center;
 }
 
 /* Center the gold title image */
@@ -24,6 +25,7 @@ p {
   width: 500px; /* Larger width for better visibility */
   height: auto;
   margin-top: 50px; /* Adjusted to place buttons below image */
+  align-items: center;
 }
 
 .navbar {
