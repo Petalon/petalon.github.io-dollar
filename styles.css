@@ -47,19 +47,21 @@ body {
     white-space: nowrap;
 }
 
-.dollar-button:hover {
-    color: #FFD700; /* Gold color for hover effect */
+
+.dollar-button:hover::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: white;
+    transform: scaleX(0); /* Start hidden */
+    transform-origin: center;
+    transition: transform 0.3s ease; /* Smooth animation */
 }
 
-.dollar-button:hover::before {
-    content: "";
-    display: block;
-    width: 0%; /* Starts as 0% width */
-    height: 2px;
-    background-color: white; /* White underline */
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transition: width 0.3s ease;
-    width: 100%; /* Full width on hover */
+.dollar-button:hover::after {
+    transform: scaleX(1); /* Expand the line on hover */
 }
+
