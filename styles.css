@@ -17,6 +17,8 @@ body {
   width: 500px; /* Larger width for better visibility */
   height: auto;
   margin-top: 50px; /* Adjusted to place buttons below image */
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
