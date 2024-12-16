@@ -1,23 +1,10 @@
-function showDollarAnimation() {
-    const container = document.getElementById('animation-container');
+document.addEventListener('DOMContentLoaded', function() {
+    const loader = document.getElementById('loader');
+    const content = document.querySelector('.content');
 
-    // Create a new dollar element
-    const dollar = document.createElement('div');
-    dollar.textContent = '$';
-    dollar.classList.add('dollar');
-
-    // Randomize its starting position
-    const x = Math.random() * window.innerWidth;
-    const y = Math.random() * window.innerHeight;
-
-    dollar.style.left = `${x}px`;
-    dollar.style.top = `${y}px`;
-
-    // Append the dollar sign to the container
-    container.appendChild(dollar);
-
-    // Remove the dollar sign after animation
-    dollar.addEventListener('animationend', () => {
-        dollar.remove();
-    });
-}
+    // Fade out loader
+    setTimeout(() => {
+        loader.style.opacity = 0;
+        content.style.display = 'block';
+    }, 500); // Adjust the timing for the loader to fade out and content to fade in
+});
