@@ -117,4 +117,22 @@ h1, .button-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: opacity 0.5s ease;
+}
+
+#loader .content {
+    opacity: 0;
+}
+
+/* Content (Website) */
+.content {
+    display: none; /* Initially hidden */
+    animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        display: block;
+        opacity: 1;
+    }
 }
